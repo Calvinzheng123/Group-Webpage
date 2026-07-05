@@ -1,4 +1,3 @@
-/* General page styling */
 body {
     font-family: Georgia, "Times New Roman", serif;
     background-color: #eaf2ff;
@@ -7,7 +6,6 @@ body {
     color: #222;
 }
 
-/* Header section styling */
 header {
     background: #1f3b73;
     color: #fff;
@@ -20,13 +18,23 @@ header h1 {
     letter-spacing: 2px;
 }
 
-/* Styling for team logo image */
 .team-logo {
-    width: 150px;
-    margin-top: 10px;
+    width: 140px;
+    height: 140px;
+    object-fit: contain;
+    display: block;
+    margin: 10px auto;
 }
 
-/* Menu button styling */
+.avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto 15px;
+}
+
 header nav {
     margin-top: 10px;
 }
@@ -46,7 +54,6 @@ header nav button:hover {
     background: #ffd166;
 }
 
-/* Flex container for team bios and vision sections */
 .container {
     width: 80%;
     margin: 20px auto;
@@ -55,7 +62,6 @@ header nav button:hover {
     justify-content: space-between;
 }
 
-/* Card styling for individual team bios */
 .card {
     background: #ffffff;
     border-radius: 10px;
@@ -78,7 +84,6 @@ h2 {
     font-family: Verdana, Arial, sans-serif;
 }
 
-/* Initially hide bio details */
 .bio {
     display: none;
     margin-top: 10px;
@@ -86,16 +91,38 @@ h2 {
     line-height: 1.5;
 }
 
-.avatar {
-    width: 120px;
-    height: 120px;
-    object-fit: cover;
-    border-radius: 50%;
-    display: block;
-    margin: 0 auto 15px auto;
+.moodboard {
+    margin-top: 15px;
+    padding: 10px;
+    background: #eaf2ff;
+    border-radius: 8px;
 }
 
-/* Button styling */
+.moodboard span,
+.moodboard a {
+    display: inline-block;
+    background: #1f3b73;
+    color: white;
+    padding: 6px 10px;
+    margin: 4px;
+    border-radius: 15px;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.moodboard a:hover {
+    background: #f4b400;
+    color: #1f3b73;
+}
+
+#vision {
+    background: #ffffff;
+    border-left: 6px solid #f4b400;
+    border-radius: 10px;
+    padding: 25px;
+    display: none;
+}
+
 button {
     background: #1f3b73;
     color: white;

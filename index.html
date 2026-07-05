@@ -4,79 +4,88 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Team Bio</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
 <header>
     <h1>Meet Our Team</h1>
-    <!-- Example team logo -->
     <img src="img/team-logo.png" alt="Team Logo" class="team-logo">
 
-    <!-- Navigation menu to switch between sections -->
     <nav>
         <button onclick="showSection('bios')">Team Bios</button>
         <button onclick="showSection('vision')">Team Vision</button>
     </nav>
 </header>
 
-<!-- Team bios section (default section) -->
 <div id="bios" class="container">
-    <!-- Each card represents an individual team member -->
+
     <div class="card">
-        <img src="img/Bhargav-avatar.png" alt="Sri Bhargav Reddy Pedhiti" class="avatar">
+        <img src="img/Bhargav-avatar.png" alt="Sri Bhargav Reddy Pedhiti Avatar" class="avatar">
         <h2>Sri Bhargav Reddy Pedhiti</h2>
         <p>UX Designer</p>
         <button onclick="toggleBio('bio1')">Show Bio</button>
         <p id="bio1" class="bio">
-            Sri Bhargav is a UX Designer passionate about creating intuitive, human-centered digital experiences.
+            Sri Bhargav is a UX designer passionate about creating intuitive, human-centered digital experiences.
         </p>
+
         <div class="moodboard">
             <h3>Moodboard</h3>
-            <p><a href="https://lawsofux.com" target="_blank">Laws of UX</a></p>
-            <p><a href="https://github.com/SriBhargav-cmd" target="_blank">My GitHub</a></p>
-            <p><a href="https://www.forbes.com/councils/forbestechcouncil/2026/04/28/stacked-for-the-future-how-3d-dram-stacking-will-transform-ai-hardware/" target="_blank">3D DRAM Stacking & The Future of AI Hardware</a></p>
+            <a href="https://lawsofux.com/" target="_blank">Laws of UX</a>
+            <a href="https://github.com/SriBhargav-cmd" target="_blank">GitHub</a>
+            <span>🎨 UI/UX</span>
+            <span>💡 Design Thinking</span>
         </div>
     </div>
 
     <div class="card">
-        <img src="img/Calvin-avatar.jpeg" alt="Calvin Zheng" class="avatar">
+        <img src="img/Calvin-avatar.jpeg" alt="Calvin Zheng Avatar" class="avatar">
         <h2>Calvin Zheng</h2>
         <p>Developer</p>
         <button onclick="toggleBio('bio2')">Show Bio</button>
         <p id="bio2" class="bio">
             Calvin is a skilled data science and computer science student with experience building software, analyzing data, and creating practical technical solutions.
         </p>
+
         <div class="moodboard">
             <h3>Moodboard</h3>
-            <p><a href="https://github.com/Calvinzheng123" target="_blank">My GitHub</a></p>
-            <p><a href="https://www.python.org/" target="_blank">Python</a></p>
-            <p><a href="https://fastapi.tiangolo.com/" target="_blank">FastAPI</a></p>
-            <p><a href="https://powerbi.microsoft.com/" target="_blank">Power BI</a></p>
+            <span>📊 Data Science</span>
+            <span>💻 Software</span>
+            <span>🧠 Problem Solving</span>
         </div>
     </div>
 
     <div class="card">
-        <h2>Jane Smith</h2>
-        <p>Backend Developer</p>
+        <img src="img/Nikhil.avatar.jpg" alt="Nikhil Vundela Avatar" class="avatar">
+        <h2>Nikhil Vundela</h2>
+        <p>Computer Science Student</p>
         <button onclick="toggleBio('bio3')">Show Bio</button>
-        <p id="bio3" class="bio">Jane is a backend developer specializing in server-side logic and database management.</p>
+        <p id="bio3" class="bio">
+            Nikhil is a computer science student passionate about software engineering, cybersecurity, artificial intelligence, and building real-world applications through teamwork, problem-solving, and continuous learning.
+        </p>
+
+        <div class="moodboard">
+            <h3>Moodboard</h3>
+            <span>💻 Java</span>
+            <span>🐍 Python</span>
+            <span>🛡️ Cybersecurity</span>
+            <span>🤖 AI</span>
+            <span>☁️ Cloud</span>
+            <span>📈 DSA</span>
+            <a href="https://github.com/NikhilV2680" target="_blank">GitHub</a>
+        </div>
     </div>
-    <div class="card">
-        <h2>Emily Johnson</h2>
-        <p>UI/UX Designer</p>
-        <button onclick="toggleBio('bio4')">Show Bio</button>
-        <p id="bio4" class="bio">Emily is a UI/UX designer with a passion for creating user-friendly interfaces.</p>
-    </div>
+
 </div>
 
-<!-- Team vision/mission statement section (hidden by default) -->
 <div id="vision" class="container" style="display: none;">
     <h2>Our Mission Statement</h2>
-    <p>Our team’s mission is to work together as responsible, creative, and reliable computer scientists who value clear communication, respect, accountability, and problem-solving. We will support each other by listening to everyone’s ideas, responding to messages on time, completing assigned work, asking for help early, staying focused during meetings, and holding each other accountable in a positive way.</p>
+    <p>
+        Our team’s mission is to work together as responsible, creative, and reliable computer scientists who value clear communication, respect, accountability, and problem-solving. We will support each other by listening to everyone’s ideas, responding to messages on time, completing assigned work, asking for help early, staying focused during meetings, and holding each other accountable in a positive way.
+    </p>
 </div>
 
-<script src="script.js"></script> <!-- Link to external JavaScript file -->
+<script src="script.js"></script>
 
 </body>
 </html>
